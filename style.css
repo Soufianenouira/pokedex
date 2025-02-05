@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 .main-content{
     display: flex;
     justify-content: center;
@@ -5,15 +9,27 @@
     color: white;
 }
 
+.poke-dialog{
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255,255,255, 0.7);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .poke-img{
     width: 90px;
     height: 80px;
 }
+
 .cart{
-    
     justify-content: space-between;
-    background-color: rgb(73,208,176);
-    width: 130px;
+    width: 140px;
     height: 100px;
     border-radius: 8px;
     margin: 10px;
@@ -37,12 +53,57 @@
     color: white;
     margin: 5px 0;
     padding: 5px;
-    width: 40px;
+    width: 50px;
     text-align: center;
 }
 
-p{
+h3{
     margin: 0;
     font-weight: bold;
     font-size: 16px;
+}
+
+h3:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.dialog-cart{
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+}
+
+.dialog-cart-info{
+    width: 400px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    
+}
+
+.poke-dialog-img{
+    margin-bottom: -40px;
+    margin-left: 87px;
+}
+
+.go-back-btn-img{
+    width: 20px;
+    height: 20px;
+}
+
+.go-back-btn{
+    border: 0;
+    background-color: transparent;
+}
+
+.dialog-cart-main-infos{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 20px;
+}
+
+h2{
+    font-size: 32px;
 }
